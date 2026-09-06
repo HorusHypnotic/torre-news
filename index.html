@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Torre News — inteligência operacional da OPERA Control Tower.">
+  <meta name="theme-color" content="#0d1110">
+  <title>Torre News | OPERA Control Tower</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Torre News, início"><span class="brand-mark">TN</span><span><strong>Torre News</strong><small>OPERA Control Tower</small></span></a>
+    <div class="edition" id="editionLabel">EDIÇÃO ATUAL</div>
+  </header>
+  <main id="top">
+    <section class="hero"><p class="eyebrow">MICROJORNAL DE INTELIGÊNCIA OPERACIONAL</p><h1>A Torre trabalha.<br>Você recebe o que importa.</h1><p class="hero-copy">Pesquisa, investigação, testes, ações e bloqueios passam por um gate editorial antes de virar notícia.</p><div class="stats" id="stats" aria-label="Resumo da edição"></div></section>
+    <section class="filters" aria-label="Filtros do jornal"><button class="filter is-active" data-filter="ALL">Tudo</button><button class="filter" data-filter="HUMAN_GATE">🚨 Precisa de você</button><button class="filter" data-filter="LAGOSTA">🦞 Lagostas</button><button class="filter" data-filter="ACTION">⚙️ Torre trabalhou</button><button class="filter" data-filter="EXPERIMENT">🧪 Testes</button><button class="filter" data-filter="BLOCKER">🧱 Bloqueios</button><button class="filter" data-filter="ECONOMIC">💰 Impacto</button></section>
+    <section class="lead-story" id="leadStory" aria-live="polite"></section>
+    <section class="newsroom"><div class="section-head"><div><p class="eyebrow">DESDE A ÚLTIMA EDIÇÃO</p><h2>O que mudou</h2></div><p id="quietRuns" class="quiet-runs"></p></div><div class="grid" id="newsGrid" aria-live="polite"></div></section>
+    <section class="editorial-note"><p class="eyebrow">REGRA EDITORIAL</p><h2>Nem todo log merece manchete.</h2><p>Rotina sem mudança material, duplicata e afirmação sem evidência ficam fora. A página publica novidade, mudança de evidência, impacto operacional ou econômico e decisões que precisam de autoridade humana.</p></section>
+  </main>
+  <footer><span>OPERA Control Tower · Torre News</span><span id="updatedAt">Atualização: —</span></footer>
+  <template id="storyTemplate"><article class="story-card"><div class="story-top"><span class="badge"></span><span class="priority"></span></div><p class="meta"></p><h3></h3><p class="summary"></p><div class="story-detail"><p><strong>Por que importa</strong><span class="why"></span></p><p><strong>Próxima ação</strong><span class="next"></span></p></div><div class="story-footer"><span class="state"></span><span class="front"></span></div></article></template>
+  <script src="./app.js" defer></script>
+</body></html>
